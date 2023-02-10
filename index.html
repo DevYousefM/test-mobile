@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD App</title>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
+    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Welcome</h1>
+    <div style="display: flex; align-items: flex-end">
+      <table class="t1">
+        <thead>
+          <tr class="tr1">
+            <th
+              colspan="1"
+              rowspan="1"
+              style="background-color: transparent"
+            ></th>
+            <th colspan="1">المبلغ الكلي</th>
+            <th colspan="1">سعر السلعة</th>
+            <th colspan="1">الكمية</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="tr2">
+            <td style="border: transparent"></td>
+            <td><input type="number" id="total" /></td>
+            <td><input type="number" id="price" /></td>
+            <td><input type="number" id="qtn" /></td>
+          </tr>
+        </tbody>
+      </table>
+      <table style="margin-right: 5px">
+        <thead>
+          <tr>
+            <th colspan="1">المبلغ المتبقي</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="border: transparent; height: 24px" id="rest"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="dCom" style="display: none">
+      <table class="t1">
+        <thead>
+          <tr class="tr1">
+            <th
+              colspan="1"
+              rowspan="1"
+              style="background-color: transparent"
+            ></th>
+            <th colspan="1">النقدية</th>
+            <th colspan="1">سعر السلعة</th>
+            <th colspan="1">الكمية</th>
+            <th colspan="1">السعر الكلي</th>
+          </tr>
+        </thead>
+        <tbody id="tCom"></tbody>
+      </table>
+    </div>
+    <div>
+      <input type="button" value="Submit" id="done" />
+      <input type="button" value="Clear" id="clear" />
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
